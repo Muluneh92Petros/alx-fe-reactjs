@@ -1,2 +1,2 @@
 # alx-fe-reactjs
-my first react.js project
+my first reactjs project
