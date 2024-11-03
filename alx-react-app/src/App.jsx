@@ -6,6 +6,7 @@ import WelcomeMessage from './WelcomeMessage'
 import Header from './Header'
 import MainContent from './MainContent'
 import Footer from './Footer'
+import UserProfile from './UserProfile'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -35,6 +36,7 @@ function App() {
       <Header />
        <MainContent />
        <Footer />
+       <UserProfile/>
     </>
   )
 }
