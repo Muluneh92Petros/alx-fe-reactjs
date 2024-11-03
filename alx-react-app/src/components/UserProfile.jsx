@@ -10,3 +10,4 @@ function UserProfile(name, age, bio){
       };
 }
 
+export default UserProfile;
