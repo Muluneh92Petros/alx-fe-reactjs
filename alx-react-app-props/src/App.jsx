@@ -12,7 +12,7 @@ import React from 'react';
 import Counter from './components/Counter';
 import ProfilePage from './ProfilePage';
 import UserContext, { UserProvider } from './UserContext';
-
+import UserContext.Provider;
 function App() {
   const userData = { name: "Jane Doe", email: "jane.doe@example.com" };
 
