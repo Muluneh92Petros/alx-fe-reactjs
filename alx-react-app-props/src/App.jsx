@@ -8,6 +8,19 @@ import MainContent from './MainContent'
 import Footer from './Footer'
 import UserProfile from './UserProfile'
 
+import React from 'react';
+import Counter from './components/Counter';
+
+function App() {
+  return (
+    <div style={{ textAlign: 'center', marginTop: '50px' }}>
+      <h1>Counter Application</h1>
+      <Counter />
+    </div>
+  );
+}
+
+export default App;
 function App() {
   const [count, setCount] = useState(0)
 
