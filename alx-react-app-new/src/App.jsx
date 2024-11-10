@@ -7,7 +7,8 @@ import Header from './Header'
 import MainContent from './MainContent'
 import Footer from './Footer'
 import UserProfile from './UserProfile'
-
+import React from 'react';
+import UserContext, { UserProvider } from './UserContext';
 function App() {
   const [count, setCount] = useState(0)
 
