@@ -10,7 +10,7 @@ import AddRecipeForm from './components/AddRecipeForm';
 
 // src/App.jsx
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Router } from 'react-router-dom';
 import RecipeList from './components/RecipeList';
 import AddRecipeForm from './components/AddRecipeForm';
 import RecipeDetails from './components/RecipeDetails';
@@ -45,10 +45,10 @@ function App() {
       <AddRecipeForm />
       <RecipeList />
       <AddRecipeForm />
-      <Routes>
+      <Router>
         <Route path="/" element={<RecipeList />} />
         <Route path="/recipe/:recipeId" element={<RecipeDetails />} />
-      </Routes>
+      </Router>
     </div>
     </>
   )
