@@ -14,6 +14,21 @@ import { Routes, Route, Router } from 'react-router-dom';
 import RecipeList from './components/RecipeList';
 import AddRecipeForm from './components/AddRecipeForm';
 import RecipeDetails from './components/RecipeDetails';
+import SearchBar from './components/SearchBar';
+import useRecipeStore from './recipeStore';
+
+const App = () => {
+  const initializeRecipes = useRecipeStore(state => state.initializeRecipes);
+
+  useEffect(() => {
+    // Sample data to initialize the store
+    const sampleRecipes = [
+      { id: 1, title: 'Pasta', description: 'Delicious pasta recipe.' },
+      { id: 2, title: 'Salad', description: 'Fresh salad recipe.' },
+      { id: 3, title: 'Pizza', description: 'Cheesy pizza recipe.' }
+    ];
+    initializeRecipes(sampleRecipes);
+  }, [initializeRecipes]);
 
 function App() {
   const [count, setCount] = useState(0)
