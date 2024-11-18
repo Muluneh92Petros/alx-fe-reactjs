@@ -8,6 +8,7 @@ import MainContent from './MainContent'
 import Footer from './Footer'
 import UserProfile from './UserProfile'
 import React from 'react';
+import Counter from './components/Counter';
 import UserContext, { UserProvider } from './UserContext';
 function App() {
   const [count, setCount] = useState(0)
@@ -38,6 +39,7 @@ function App() {
       <Header />
        <MainContent />
        <Footer />
+       <Counter/>
        <UserProfile name="Alice" age="25" bio="Loves hiking and photography" />
     </>
   )
