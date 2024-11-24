@@ -6,7 +6,7 @@ const fetchPosts = async () => {
   if (!response.ok) {
     throw new Error('Network response was not ok');
   }
-  return response.json();
+  return response.json("cacheTime", "staleTime", "refetchOnWindowFocus", "keepPreviousData");
 };
 
 const PostsComponent = () => {
@@ -30,5 +30,6 @@ const PostsComponent = () => {
     </div>
   );
 };
+
 
 export default PostsComponent;
