@@ -16,6 +16,7 @@ const App = () => {
         <Link to="/profile">Profile</Link>
       </nav>
       <Routes>
+      <Route path="/user/:userId" element={<UserProfile />} />
         <Route path="/" element={<Home />} />
         <Route path="/profile/*" element={<Profile />} />
         <Route path="*" element={<NotFound />} />
