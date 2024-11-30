@@ -22,11 +22,13 @@ const App = () => {
         <Route path="/profile/:userId" element={<UserProfile />} />
         const isAuthenticated = false; // Change this to true to simulate authentication
 
-<Route path="/profile/*" element={
+<Route 
+path="/profile/*" element={
   <ProtectedRoute isAuthenticated={isAuthenticated}>
     <Profile />
   </ProtectedRoute>
-} />
+} 
+/>
       </Routes>
     </div>
   );
