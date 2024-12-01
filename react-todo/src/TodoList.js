@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
+<<<<<<< HEAD
 import React from 'react';
 import TodoList from './TodoList';
+=======
+>>>>>>> 42ca6dee0c3332416645acafb91f55c604b35618
 
 const TodoList = () => {
     const [todos, setTodos] = useState([
@@ -9,6 +12,7 @@ const TodoList = () => {
     ]);
     const [newTodo, setNewTodo] = useState('');
 
+<<<<<<< HEAD
     const App = () => {
         return (
             <div className="App">
@@ -17,6 +21,8 @@ const TodoList = () => {
         );
     };
 
+=======
+>>>>>>> 42ca6dee0c3332416645acafb91f55c604b35618
     const addTodo = (e) => {
         e.preventDefault();
         if (!newTodo) return;
@@ -59,4 +65,8 @@ const TodoList = () => {
     );
 };
 
+<<<<<<< HEAD
 export default TodoList;
+=======
+export default TodoList;
+>>>>>>> 42ca6dee0c3332416645acafb91f55c604b35618
