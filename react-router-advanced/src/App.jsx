@@ -14,6 +14,7 @@ const App = () => {
       <nav>
         <Link to="/">Home</Link>
         <Link to="/profile">Profile</Link>
+        <Link to="/blog/:id">BlogPost</Link>
       </nav>
       <Routes>
         <Route path="/user/:userId" element={<UserProfile />} />
@@ -62,5 +63,8 @@ function App() {
     </>
   )
 }
+
+
+
 
 export default App;
