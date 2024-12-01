@@ -13,7 +13,7 @@ describe('TodoList Component', () => {
     render(<TodoList />);
     const input = screen.getByPlaceholderText(/Add a new todo/i);
     fireEvent.change(input, { target: { value: 'New Todo' } });
-    fireEvent.submit(screen.getByRole('button', { name: /Add Todo/i }));
+    fireEvent.click(screen.getByRole('button', { name: /Add Todo/i }));
 
     expect(screen.getByText(/New Todo/i)).toBeInTheDocument();
   });
