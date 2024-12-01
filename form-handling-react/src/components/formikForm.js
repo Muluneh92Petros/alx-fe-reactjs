@@ -61,4 +61,4 @@ function FormikForm() {
   );
 }
 
-export default FormikForm;
+export default formikForm;
