@@ -1,4 +1,3 @@
-// src/components/FormikForm.js
 import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
@@ -18,7 +17,6 @@ const FormikForm = () => {
 
     const handleSubmit = (values) => {
         console.log(values);
-        // Here you would typically make an API call to register the user
     };
 
     return (
