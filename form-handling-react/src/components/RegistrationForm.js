@@ -15,6 +15,7 @@ function RegistrationForm() {
       return;
     }
     setError('');
+    
     // Simulate API call
     console.log('User Registered:', { username, email, password });
   };
