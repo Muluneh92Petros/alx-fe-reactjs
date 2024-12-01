@@ -7,7 +7,7 @@ import './App.css'
 import React from 'react';
 import RecipeList from './components/RecipeList';
 import AddRecipeForm from './components/AddRecipeForm';
-import UserProfile from './component/UserProfile';
+import UserProfile from './components/UserProfile';
 // src/App.jsx
 import React from 'react';
 import { Routes, Route, Router } from 'react-router-dom';
@@ -73,4 +73,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
