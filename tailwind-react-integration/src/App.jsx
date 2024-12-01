@@ -7,7 +7,7 @@ import './App.css'
 import React from 'react';
 import RecipeList from './components/RecipeList';
 import AddRecipeForm from './components/AddRecipeForm';
-import UserProfile from './UserProfile';
+import UserProfile from './component/UserProfile';
 // src/App.jsx
 import React from 'react';
 import { Routes, Route, Router } from 'react-router-dom';
