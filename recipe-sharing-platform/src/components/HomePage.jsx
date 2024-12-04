@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import data from '../data.json';
 
-const HomePage = (md) => {
+const HomePage = (md,Link,react-router-dom) => {
   const [recipes, setRecipes] = useState([]);
 
   useEffect(() => {
