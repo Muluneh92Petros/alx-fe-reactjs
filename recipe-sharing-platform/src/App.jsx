@@ -17,6 +17,9 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
+      <div className="text-blue-500">
+      <h2 className="text-3xl font-bold">Recipe Sharing Platform</h2>
+    </div>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
@@ -32,4 +35,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
