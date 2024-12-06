@@ -4,26 +4,30 @@ function RegistrationForm() {
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [error, setError] = useState('');
+  const [errors, setErrors] = useState({}); // State for tracking errors
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
+    let formErrors = {};
+
     // Validation checks for all fields
     if (!username) {
-      setError('Username is required!');
-      return;
+      formErrors.username = 'Username is required!';
     }
     if (!email) {
-      setError('Email is required!');
-      return;
+      formErrors.email = 'Email is required!';
     }
     if (!password) {
-      setError('Password is required!');
+      formErrors.password = 'Password is required!';
+    }
+
+    // If there are errors, update the state and return
+    if (Object.keys(formErrors).length > 0) {
+      setErrors(formErrors);
       return;
     }
-    
-    setError('');
+
+    setErrors({}); // Clear errors if validation passes
 
     // Simulate API call
     console.log('User Registered:', { username, email, password });
@@ -31,7 +35,7 @@ function RegistrationForm() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
-      {error && <div className="text-red-500">{error}</div>}
+      {errors.username && <div className="text-red-500">{errors.username}</div>}
       <div>
         <label htmlFor="username">Username:</label>
         <input
@@ -42,6 +46,7 @@ function RegistrationForm() {
           className="border rounded p-2 w-full"
         />
       </div>
+      {errors.email && <div className="text-red-500">{errors.email}</div>}
       <div>
         <label htmlFor="email">Email:</label>
         <input
@@ -52,6 +57,7 @@ function RegistrationForm() {
           className="border rounded p-2 w-full"
         />
       </div>
+      {errors.password && <div className="text-red-500">{errors.password}</div>}
       <div>
         <label htmlFor="password">Password:</label>
         <input
