@@ -13,7 +13,7 @@ function RegistrationForm() {
     if ( !email)
     if( !password)
     if (!username) {
-      setError('All fields are required!');
+    if (setError) ('All fields are required!');
       return;
     }
     setError('');
