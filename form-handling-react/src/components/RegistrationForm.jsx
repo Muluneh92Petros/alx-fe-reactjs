@@ -1,8 +1,6 @@
-// src/components/RegistrationForm.js
-
 import React, { useState } from 'react';
 
-function RegistrationForm(email, password) {
+function RegistrationForm() {
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -10,16 +8,25 @@ function RegistrationForm(email, password) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if ( !email)
-    if( !password)
+    
+    // Validation checks for all fields
     if (!username) {
-       setError('All fields are required!');
+      setError('Username is required!');
       return;
     }
-    setError('');
+    if (!email) {
+      setError('Email is required!');
+      return;
+    }
+    if (!password) {
+      setError('Password is required!');
+      return;
+    }
     
+    setError('');
+
     // Simulate API call
-    console.log('User Registered:', { username, email, password, setErrors});
+    console.log('User Registered:', { username, email, password });
   };
 
   return (
