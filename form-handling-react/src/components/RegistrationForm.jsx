@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 
-function RegistrationForm() {
+function RegistrationForm(email, password) {
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
