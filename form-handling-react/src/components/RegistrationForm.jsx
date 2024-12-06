@@ -13,13 +13,13 @@ function RegistrationForm() {
     if ( !email)
     if( !password)
     if (!username) {
-    if (setError) ('All fields are required!');
+    if (setErrors) ('All fields are required!');
       return;
     }
     setError('');
     
     // Simulate API call
-    console.log('User Registered:', { username, email, password });
+    console.log('User Registered:', { username, email, password, setErrors});
   };
 
   return (
