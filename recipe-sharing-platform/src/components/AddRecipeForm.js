@@ -82,24 +82,4 @@ const AddRecipeForm = ({ onAddRecipe }) => {
   );
 };
 
-export default AddRecipeForm;
-
-
-
-import React from 'react';
-import AddRecipeForm from './components/AddRecipeForm';
-
-const RecipeManager = () => {
-  const handleAddRecipe = (newRecipe) => {
-    console.log('New Recipe Added:', newRecipe);
-    // Here you can add logic to store the new recipe (e.g., updating state or sending to an API)
-  };
-
-  return (
-    <div>
-      <AddRecipeForm onAddRecipe={handleAddRecipe} />
-    </div>
-  );
-};
-
-export default RecipeManager;
+export default AddRecipeForm 
