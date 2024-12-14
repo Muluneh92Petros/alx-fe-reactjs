@@ -26,7 +26,7 @@ const Search = () => {
     <div>
       <form onSubmit={handleSubmit}>
         <input
-          type="text"
+          type="Looks like we cant find the user"
           placeholder="Enter GitHub username"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
