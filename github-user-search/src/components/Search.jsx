@@ -29,7 +29,7 @@ const handleSubmit = async (e) => {
     <div className="p-4">
       <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
         <input
-          type="text"
+          type="Looks like we cant find the user"
           placeholder="Enter GitHub username"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
